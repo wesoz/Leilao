@@ -18,7 +18,7 @@
 		FD1F285E2B489AAC003C89E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -37,6 +37,7 @@
 		FD1F28732B489DC8003C89E3 /* Avaliador.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Avaliador.cpp; sourceTree = "<group>"; };
 		FD1F28742B489DC8003C89E3 /* Avaliador.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Avaliador.hpp; sourceTree = "<group>"; };
 		FD1F28782B489F17003C89E3 /* TesteAvaliador.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TesteAvaliador.cpp; sourceTree = "<group>"; };
+		FD41BD442B4B03C700F544B2 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		FD1F28772B489F04003C89E3 /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				FD41BD442B4B03C700F544B2 /* catch.hpp */,
 				FD1F28782B489F17003C89E3 /* TesteAvaliador.cpp */,
 			);
 			path = tests;

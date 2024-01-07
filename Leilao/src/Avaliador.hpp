@@ -12,10 +12,12 @@
 
 class Avaliador {
 private:
-    float maiorValor;
+    float maiorValor = INT_MIN;
+    float menorValor = INT_MAX;
 public:
     void avalia(Leilao leilao);
     float recuperaMaiorValor();
+    float recuperaMenorValor();
 };
 
 #endif /* Avaliador_hpp */

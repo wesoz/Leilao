@@ -10,15 +10,20 @@
 void Avaliador::avalia(Leilao leilao) {
     std::vector<Lance> lances = leilao.recuperaLances();
     for (Lance lance : lances) {
-        if (this->maiorValor < lance.recuperaValor()) {
+        if (lance.recuperaValor() > this->maiorValor) {
             this->maiorValor = lance.recuperaValor();
         }
+        
+        if (lance.recuperaValor() < this->menorValor) {
+            this->menorValor = lance.recuperaValor();
+        }
     }
-    
-    Lance ultimoLance = lances.back();
-    this->maiorValor = ultimoLance.recuperaValor();
 }
 
 float Avaliador::recuperaMaiorValor() {
     return this->maiorValor;
+}
+
+float Avaliador::recuperaMenorValor() {
+    return this->menorValor;
 }
