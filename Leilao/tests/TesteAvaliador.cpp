@@ -62,3 +62,25 @@ TEST_CASE("Avaliador") {
         REQUIRE(1500 == maiores3Lances[2].recuperaValor());
     }
 }
+
+TEST_CASE("Leilão não deve receber lances consecutivos do mesmo usuário") {
+    Leilao leilao("Fiat 147 0KM");
+    Usuario vinicius("Vinicius Dias");
+    
+    Lance primeiroLance(vinicius, 1000);
+    Lance segundoLance(vinicius, 1500);
+    
+    leilao.recebeLance(primeiroLance);
+    leilao.recebeLance(segundoLance);
+    
+    REQUIRE(1 == leilao.recuperaLances().size());
+    REQUIRE(1000 == leilao.recuperaLances()[0].recuperaValor());
+}
+
+TEST_CASE("Usuário deve saber informar seu primeiro nome") {
+    Usuario vinicius("Vinicius Dias");
+    
+    std::string primeiroNome = vinicius.recuperaPrimeiroNome();
+    
+    REQUIRE("Vinicius" == primeiroNome);
+}

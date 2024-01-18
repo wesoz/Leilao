@@ -12,5 +12,12 @@ const std::vector<Lance>& Leilao::recuperaLances() const
 
 void Leilao::recebeLance(const Lance& lance)
 {
+    if (lances.size() > 0) {
+        Lance ultimoLance = lances.back();
+        if (ultimoLance.recuperaNomeUsuario() == lance.recuperaNomeUsuario()) {
+            return;
+        }
+    }
+    
     lances.push_back(lance);
 }
