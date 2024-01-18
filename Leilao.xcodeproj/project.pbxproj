@@ -12,6 +12,9 @@
 		FD1F28722B489AD3003C89E3 /* Lance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F286E2B489AD3003C89E3 /* Lance.cpp */; };
 		FD1F28752B489DC8003C89E3 /* Avaliador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28732B489DC8003C89E3 /* Avaliador.cpp */; };
 		FD1F28792B489F17003C89E3 /* TesteAvaliador.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28782B489F17003C89E3 /* TesteAvaliador.cpp */; };
+		FD6229042B58A41E00115942 /* MainTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6229032B58A41E00115942 /* MainTest.cpp */; };
+		FD6229062B58A44D00115942 /* TesteLeilao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6229052B58A44D00115942 /* TesteLeilao.cpp */; };
+		FD6229082B58A4CA00115942 /* TesteUsuario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6229072B58A4CA00115942 /* TesteUsuario.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +41,9 @@
 		FD1F28742B489DC8003C89E3 /* Avaliador.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Avaliador.hpp; sourceTree = "<group>"; };
 		FD1F28782B489F17003C89E3 /* TesteAvaliador.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TesteAvaliador.cpp; sourceTree = "<group>"; };
 		FD41BD442B4B03C700F544B2 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
+		FD6229032B58A41E00115942 /* MainTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainTest.cpp; sourceTree = "<group>"; };
+		FD6229052B58A44D00115942 /* TesteLeilao.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TesteLeilao.cpp; sourceTree = "<group>"; };
+		FD6229072B58A4CA00115942 /* TesteUsuario.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TesteUsuario.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				FD41BD442B4B03C700F544B2 /* catch.hpp */,
 				FD1F28782B489F17003C89E3 /* TesteAvaliador.cpp */,
+				FD6229032B58A41E00115942 /* MainTest.cpp */,
+				FD6229052B58A44D00115942 /* TesteLeilao.cpp */,
+				FD6229072B58A4CA00115942 /* TesteUsuario.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -157,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6229062B58A44D00115942 /* TesteLeilao.cpp in Sources */,
 				FD1F28722B489AD3003C89E3 /* Lance.cpp in Sources */,
 				FD1F28702B489AD3003C89E3 /* Leilao.cpp in Sources */,
+				FD6229042B58A41E00115942 /* MainTest.cpp in Sources */,
 				FD1F28792B489F17003C89E3 /* TesteAvaliador.cpp in Sources */,
 				FD1F28712B489AD3003C89E3 /* Usuario.cpp in Sources */,
+				FD6229082B58A4CA00115942 /* TesteUsuario.cpp in Sources */,
 				FD1F28752B489DC8003C89E3 /* Avaliador.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
